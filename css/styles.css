@@ -1,0 +1,118 @@
+
+.navbar{
+  overflow: hidden;
+  background: #000000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+
+}
+.container{
+  max-width:920px;
+  padding-left:10.5rem;
+  margin:auto;
+  text-align:center;
+}
+.navbar img{
+  width: 125px;
+  height:110px;
+  cursor: pointer;
+}
+
+.navbar a{
+  float:right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 25px 18px;
+  text-decoration: none;
+}
+.navbar a:hover{
+  background:#03b900;
+  transition: all .4s ease;
+
+}
+body, html{
+  height:100%;
+  margin:0;
+  padding-top: 39px;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4 , .pimg5{
+  position: sticky;
+
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('../img/sean.JPG');
+  min-height:100%;
+
+}
+
+.pimg2{
+  background-image:url('../img/decks.jpeg');
+  min-height:500px;
+}
+
+.pimg3{
+  background-image:url('../img/NAIROBI.jpg');
+  min-height:500px;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment: scroll;
+  }
+}
